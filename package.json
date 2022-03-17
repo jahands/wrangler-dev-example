@@ -1,0 +1,16 @@
+{
+  "name": "wrangler-dev-example",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.4.0",
+    "miniflare": "^2.3.0",
+    "typescript": "^4.6.2",
+    "wrangler": "0.0.19"
+  },
+  "private": true,
+  "scripts": {
+    "build": "npx esbuild src/index.ts --format=esm --minify --sourcemap --bundle --outdir=./dist --out-extension:.js=.mjs",
+    "start": "wrangler dev",
+    "publish": "wrangler publish"
+  }
+}
