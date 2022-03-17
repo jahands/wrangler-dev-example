@@ -1,0 +1,7 @@
+name = "wrangler-dev-example"
+compatibility_date = "2022-03-17"
+main = "dist/index.mjs"
+
+# This doesn't work either, it builds once and doesn't watch anything
+[build]
+command = "npm run build"
